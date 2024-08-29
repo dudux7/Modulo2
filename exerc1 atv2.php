@@ -11,7 +11,7 @@
 
     echo "o quociente é $c e o resto é $d ";
 
-
+    
 
 
 ?>
