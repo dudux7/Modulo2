@@ -7,7 +7,7 @@
     $c = readline();
      echo "digite o quarto numero";
     $d = readline();
-
     $media = ($a+$b+$c+$d) /4;
-    echo = "A media dos quatro numeros somados é: $media";
+    echo "A media dos quatro numeros somados é: $media";
     
+?>
