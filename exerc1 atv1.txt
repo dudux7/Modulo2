@@ -1,0 +1,19 @@
+1. Indique qual o tipo dos seguintes dados (Inteiro, Decimal, String ou Booleano): 
+
+	Inteiro
+	Booleano
+	String
+	Decimal
+	String
+	Inteiro
+	Inteiro
+	Booleano
+	String
+	Inteiro
+	Decimal
+	Decimal
+	Inteiro
+	Inteiro
+	String
+
+
