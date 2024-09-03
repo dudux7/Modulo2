@@ -41,6 +41,7 @@ switch ($operacao) {
     case 4:
         $result = divisao($num1, $num2);
         break;
+
 }
 
 echo "Resultado: $result";
