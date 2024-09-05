@@ -1,20 +1,33 @@
 <?php
 
-$user = [ 'Adm' => '1234'];
-$log = [];
+$adm = ['admin' => 'admin'];
 
-    while(true){
-        if (!isset(['usuario'])){
-            echo "Login ";
-            $user = readline();
-            echo "Senha ";
-            $senha = readline();
-            echo "Quanto de dinheiro tem no caixa? ";
-            $caixa = readline();
-            if(login($user, $senha)){
-                $_SESSION['usuario'] = $user;
-                salvaLog(" Usuario $user logou no sistema");
-            }
-        }
-
+    
+    /*funções para login*/    
+        function login($usuario, $senha) {
+        global $adm;
+        return ($adm[$usuario]) && $adm[$usuario] === $senha;
     }
+    
+    
+    /*logar*/
+    
+while (true) {
+        echo "digite o nome do usuario: ";
+        $usuario = readline();
+        echo "digite a senha: ";
+        $senha = readline();
+        
+       
+         if (login($usuario, $senha)) {
+            echo"bem vindo $usuario \n";
+        } else {
+            echo "Login incorreto\n";
+        }
+        
+    }
+
+
+
+
+?>
