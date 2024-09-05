@@ -1,5 +1,7 @@
 <?php
 
+$i = 0;
+$total = 0;
 $adm = ['admin' => 'admin'];
 
     
@@ -13,9 +15,9 @@ $adm = ['admin' => 'admin'];
      function operações() {
         global $total;
         system('cls');
-        echo "Usuário $usuario logado\n";
+        echo "Usuário logado\n";
         
-        echo "Valor total arrecadado: R$ $total com $i vendas\n";
+        echo "Valor total arrecadado: R$ ". $total. "\n";
        
         echo "1 - Cadastrar novo usuário\n";
         echo "2 - Verificar login\n";
@@ -68,7 +70,7 @@ while (true) {
          if (login($usuario, $senha)) {
             echo"bem vindo $usuario \n";
         } else {
-            echo "Login incorreto\n";
+            echo "Usuário ou senha incorreto\n";
         }
         
         operações();
@@ -79,7 +81,7 @@ while (true) {
                 cadastrar();
                 break;
             case 2:
-                vereficar();
+                verificar();
                 break;
             case 3:
                 deslogar();
